@@ -61,7 +61,7 @@ function draw() {
         playerArrows[i].body
       );
 
-      if (board1Collision || board2Collision) {
+      if (board1Collision.collided || board2Collision.collided) {
         score += 5;
       }
 
@@ -73,9 +73,9 @@ function draw() {
       //   score += 5;
       // }
 
-      /*if (board1Collision.collided || board2Collision.collided) {
-        score = 5;
-      }*/
+      // if (board1Collision.collided || board2Collision.collided) {
+      //   score = 5;
+      // }
 
       
       var posX = playerArrows[i].body.position.x;
